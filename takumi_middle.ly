@@ -1,5 +1,5 @@
 \header {
-  title = "TAKUMI"
+  title = "TAKUMI_c"
   composer = "Composer"
 }
 
@@ -32,10 +32,6 @@
     <cs fs a cs>2 <cs fs a cs>8. <ds ds'>16~ <ds ds'>8 <e e'>8
     <ds fs b ds>2. <e e'>4
     <fs b ds fs>2. <b,, b'>8 <a a'>
-
-    %74
-    <gs gs'>2 <gs gs'>8. <a a'>16~ <a a'>8 <b b'>8
-    <b b'>4. <b b'>8 <fs' fs'>8. <e e'>16~ <e e'>8 <ds ds'>8
   }
 
   \new Staff { \clef "treble" \key e \major \time 4/4

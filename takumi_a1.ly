@@ -56,7 +56,7 @@
     a,\sustainOff\sustainOn e' cs' e, a e a, e'
     gs,\sustainOff\sustainOn e' b' e, gs e gs, e'
     fs,\sustainOff\sustainOn cs' a' cs, fs cs fs, cs'
-    b,\sustainOff\sustainOn fs' b ds fs b b fs
+    b,\sustainOff\sustainOn fs' b ds fs b b, fs'
   }
   >>
 

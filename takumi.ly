@@ -1,6 +1,6 @@
 \header {
   title = "TAKUMI"
-  composer = "2021.09.02"
+  composer = "Typed: 2021.09.02~2021.09.03"
 }
 
 \score {
@@ -8,10 +8,25 @@
   \language "english"
   \relative c''
   <<
+  %Right Hand
   \new Staff { 
     \relative c''
     \tempo 4 = 120
     \clef "treble" \key e \major \time 4/4 
+    %opening
+    gs'4 b fs b
+    e, gs ds gs
+    <a, cs>2.~ <a cs>8 cs'16 a16
+    e2. e,8 fs
+
+    gs4 b fs b
+    e, gs ds gs
+    <a, cs>4. e'16 a cs4. e16 a
+    cs1
+
+    <gs,, b e>2 <gs b e> <gs b e> <gs b e>
+    <gs b e> <gs b e> <gs b e> <gs b e>4 e'8 fs
+
     %11
     gs2 gs8. a16~ a8 b8
     b4. b8 fs'8. e16~ e8 ds8
@@ -63,7 +78,7 @@
     <a, cs e gs>2\arpeggio <a cs e gs>8. fs'16~ fs8 e8
     <fs, b ds>4. <gs b>8~ <gs b>4 b4
     <e, a cs>2 cs'8. ds16~ ds8 e8
-    <e gs>4 <ds fs> e ds
+    <b e gs>4 <ds fs> e ds
 
     %A3
     <b, e gs>2 <e gs>8. <e a>16~ <e a>8 <e b'>8
@@ -132,13 +147,53 @@
     %\tempo 4 = 60
     <e gs b e>1
     <e, gs b e gs b e>\arpeggio
+
+    %closing
+    r2. e''8 fs
+
+    gs4 b fs b
+    e,2. e,8 fs
+    gs4 b fs b
+    e,2. e,8 fs
+
+    gs4 b fs b
+    e, gs ds gs
+    <a, cs>2.~ <a cs>8 cs'16 a
+    e1
+
+    <a, cs>
+    <b ds>
+    <a b ds fs>
+    a4 b ds fs\fermata
+
+    <gs, b e>1
+    <e''' e'>
+    r
+    r\bar "|."
   }
 
+
+
+  % Left Hand
   \new Staff { \clef "bass" \key e \major \time 4/4
     \relative c''
+    e,2\sustainOn ds,,\sustainOff\sustainOn
+    <cs gs'>\sustainOff\sustainOn <b fs'>\sustainOff\sustainOn
+    <a e'>1~\sustainOff\sustainOn
+    <a e'>2. r4
+
+    e2\sustainOff\sustainOn ds\sustainOff\sustainOn
+    <cs gs'>\sustainOff\sustainOn <b fs'>\sustainOff\sustainOn
+    <a e'>1~\sustainOff\sustainOn
+    <a e'>1
+
+    e1~\sustainOff\sustainOn
+    e2.~ e8 b'
+    e1~
+    e1
 
     %74
-    e,,,8\sustainOn b, gs' b, e b e, b'
+    e,8\sustainOff\sustainOn b' gs' b, e b e, b'
     ds,\sustainOff\sustainOn b' fs' b, ds b ds, b'
     cs,\sustainOff\sustainOn gs' e' gs, cs gs cs, gs'
     b,\sustainOff\sustainOn fs' b fs ds' fs, b fs
@@ -218,9 +273,9 @@
     gs,\sustainOff\sustainOn ds' fs ds fs ds gs, ds'
     gs,\sustainOff\sustainOn cs e cs e cs gs cs
     %62
+    \clef "bass"
     fs,\sustainOff\sustainOn cs' e cs e cs fs, cs'
     fs,\sustainOff\sustainOn b ds b ds b fs b
-    \clef "bass"
     e,\sustainOff\sustainOn b' e b e b e, b'
     e,\sustainOff\sustainOn b' e b gs' b, e, b'
     %66
@@ -241,7 +296,7 @@
     b,\sustainOff\sustainOn fs' b fs ds' fs, b fs
     %78
     a,\sustainOff\sustainOn e' cs' e, a e a, e'
-    gs,\sustainOff\sustainOn e' b' gs e' b gs' e
+    gs,\sustainOff\sustainOn e' b' gs e' b e~ e
     fs,\sustainOff\sustainOn cs' a' cs, fs cs fs, cs'
     b,\sustainOff\sustainOn fs' b ds fs b ds, fs
 
@@ -256,6 +311,30 @@
     b,16\sustainOff\sustainOn b' b, b' b, b' b, b' b, b' b, b' b, b' b, b'
     e,8\sustainOff\sustainOn b' e gs b e gs b
     r1\sustainOff\sustainOn
+
+    %closing
+    r1
+    \clef "treble"
+    e2\sustainOff\sustainOn ds\sustainOff\sustainOn
+    cs2.\sustainOff\sustainOn r4
+    e,2\sustainOff\sustainOn ds\sustainOff\sustainOn
+    <cs gs'>2.\sustainOff\sustainOn r4
+
+    \clef "bass"
+    <e, gs>2\sustainOff\sustainOn <ds fs>\sustainOff\sustainOn
+    <cs gs'>\sustainOff\sustainOn <b fs'>\sustainOff\sustainOn
+    <a e'>1~\sustainOff\sustainOn
+    <a e'>
+
+    <fs e'>\sustainOff\sustainOn
+    <a fs'>\sustainOff\sustainOn
+    e~\sustainOff\sustainOn
+    e
+
+    <e e'>~\sustainOff\sustainOn
+    <e e'>
+    <e, e'>~\sustainOff\sustainOn
+    <e e'>
   }
   >>
 

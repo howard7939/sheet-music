@@ -1,5 +1,5 @@
 \header {
-  title = "TAKUMI_closing"
+  title = "TAKUMI_close"
   composer = "Composer"
 }
 
@@ -13,38 +13,54 @@
     \tempo 4 = 120
     \clef "treble" \key e \major \time 4/4 
     %opening
-    gs'4 b fs b
-    e, gs ds gs
-    <a, cs>2.~ <a cs>8 cs'16 a16
-    e2. e,8 fs
+    r2. e'8 fs
+
+    gs4 b fs b
+    e,2. e,8 fs
+    gs4 b fs b
+    e,2. e,8 fs
 
     gs4 b fs b
     e, gs ds gs
-    <a, cs>4. e'16 a cs4. e16 a
-    cs1
+    <a, cs>2.~ <a cs>8 cs'16 a
+    e1
 
-    <gs,, b e>2 <gs b e> <gs b e> <gs b e>
-    <gs b e> <gs b e> <gs b e> <gs b e>4 e'8 fs
+    <a, cs>
+    <b ds>
+    <a b ds fs>
+    \tempo 4 = 90
+    a4 b ds fs
+
+    <gs, b e>1
+    <e''' e'>
+    r\bar "|."
   }
 
-  \new Staff { \clef "bass" \key e \major \time 4/4
+  \new Staff { \clef "treble" \key e \major \time 4/4
     \relative c''
 
     %opening
+    r1
+
     e,2\sustainOn ds\sustainOff\sustainOn
+    cs2.\sustainOff\sustainOn r4
+    e,2\sustainOn ds\sustainOff\sustainOn
+    <cs gs'>2.\sustainOff\sustainOn r4
+
+    \clef "bass"
+    <e, gs>2\sustainOn <ds fs>\sustainOff\sustainOn
     <cs gs'>\sustainOff\sustainOn <b fs'>\sustainOff\sustainOn
     <a e'>1~\sustainOff\sustainOn
-    <a e'>2. r4
+    <a e'>
 
-    e2\sustainOff\sustainOn ds\sustainOff\sustainOn
-    <cs gs'>\sustainOff\sustainOn <b fs'>\sustainOff\sustainOn
-    <a e'>1~\sustainOff\sustainOn
-    <a e'>1
+    <fs e'>\sustainOff\sustainOn
+    <a fs'>\sustainOff\sustainOn
+    e~\sustainOff\sustainOn
+    e
 
-    e1~\sustainOff\sustainOn
-    e2.~ e8 b'
-    e1~
-    e1
+    <e e'>~\sustainOff\sustainOn
+    <e e'>
+    <e, e'>\sustainOff\sustainOn
   }
   >>
 
